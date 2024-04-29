@@ -111,7 +111,7 @@ Ejecutamos el endpoint para modificar usuario:
 
 y podemos revisar que haya cambiado el dato:
 
-
+![updated_user](https://github.com/CarlosG4rc/user_admin/assets/67180099/1be41921-0ba7-45b7-b4da-157f5731377d)
 
 <h2>Borrado de usuario especifico</h2>
 
@@ -124,10 +124,110 @@ y podemos revisar que haya cambiado el dato:
 
 Podemos revisar a todos los usuarios y veremos que y no esta en los registros:
 
-![updated_user](https://github.com/CarlosG4rc/user_admin/assets/67180099/1be41921-0ba7-45b7-b4da-157f5731377d)
-
-
 ![deleted_user](https://github.com/CarlosG4rc/user_admin/assets/67180099/c08319c6-e1a3-4591-abdc-feb66b8d428d)
 
+<h2>Rol de consumo de servicio en Studio Ghibli</h2>
 
+Podemos realizar ciertas consultas de acuerdo al rol que hemos elegido.
+
+<h3>Films</h3>
+
+Si tenemos el rol de films podemos obtener todos los films del estudio o un film en especifico:
+
+El primer endpointa usar tiene las siguientes características:
+
+<p align="left">URL: http://localhost:5000/users/films/:id</p>
+<p align="left">Method: POST</p>
+<p align="left">Con este endpoint podemos obtener el catálogo de films del studio, en caso de que el id provisto sea de un usuario que tiene el rol de films o admin de lo contrario el acceso será restringido</p>
+
+Si no mandamos ningún parametro por body obtendremostodo el catálogo como se muestra a continuación:
+
+![films](https://github.com/CarlosG4rc/user_admin/assets/67180099/d2542928-acb8-49eb-b824-6f093bf4145f)
+
+En caso de mandar un body debe ser en formato JSON.
+```
+{
+    "id":"af3910a6-429f-4c74-9ad5-dfe1c4aa04f2"
+}
+```
+
+![a_film](https://github.com/CarlosG4rc/user_admin/assets/67180099/45fad22b-2e1b-472e-b9b5-524f4a0777dc)
+
+<h3>People</h3>
+
+Si tenemos el rol de people podemos obtener todos las personas del estudio o de una person en especifico:
+
+<p align="left">URL: http://localhost:5000/users/people/:id</p>
+<p align="left">Method: POST</p>
+<p align="left">Con este endpoint podemos obtener los datos de todas las personas del studio, en caso de que el id provisto sea de un usuario que tiene el rol de people o admin de lo contrario el acceso será restringido</p>
+
+Si no mandamos ningún parametro por body obtendremostodo el catálogo como se muestra a continuación:
+
+![people](https://github.com/CarlosG4rc/user_admin/assets/67180099/a8a39ea9-c782-46ee-8397-ff8d5d82f2a0)
+
+En caso de mandar un body debe ser en formato JSON.
+```
+{
+    "id":"af3910a6-429f-4c74-9ad5-dfe1c4aa04f2"
+}
+```
+
+![a_person](https://github.com/CarlosG4rc/user_admin/assets/67180099/906fa82d-a874-43ee-a530-9b210ef5f902)
+
+<h3>Locations</h3>
+
+<p align="left">URL: http://localhost:5000/users/location/:id</p>
+<p align="left">Method: POST</p>
+<p align="left">Con este endpoint podemos obtener los datos de todas las locaciones del studio, en caso de que el id provisto sea de un usuario que tiene el rol de people o admin de lo contrario el acceso será restringido</p>
+
+Si no mandamos ningún parametro por body obtendremostodo el catálogo como se muestra a continuación:
+
+![locations](https://github.com/CarlosG4rc/user_admin/assets/67180099/7e0d6429-3784-4534-b11b-f5ee6f238dc5)
+
+En caso de mandar un body debe ser en formato JSON.
+```
+{
+    "id":"af3910a6-429f-4c74-9ad5-dfe1c4aa04f2"
+}
+```
+
+![a_location](https://github.com/CarlosG4rc/user_admin/assets/67180099/42570d96-550e-48e8-8c63-406b3e94980c)
+
+<h3>Species</h3>
+
+<p align="left">URL: http://localhost:5000/users/species/:id</p>
+<p align="left">Method: POST</p>
+<p align="left">Con este endpoint podemos obtener los datos de todas las especies del studio incluidos humanos, animales y espiritus, en caso de que el id provisto sea de un usuario que tiene el rol de people o admin de lo contrario el acceso será restringido</p>
+
+Si no mandamos ningún parametro por body obtendremostodo el catálogo como se muestra a continuación:
+
+![species](https://github.com/CarlosG4rc/user_admin/assets/67180099/ac09e101-7d75-4a6b-aaec-cab181e8eb4c)
+
+En caso de mandar un body debe ser en formato JSON.
+```
+{
+    "id":"af3910a6-429f-4c74-9ad5-dfe1c4aa04f2"
+}
+```
+
+![a_specie](https://github.com/CarlosG4rc/user_admin/assets/67180099/87486e28-821c-40e8-b355-23edd62c1542)
+
+<h3>Vehicle</h3>
+
+<p align="left">URL: http://localhost:5000/users/vehicle/:id</p>
+<p align="left">Method: POST</p>
+<p align="left">Con este endpoint podemos obtener los datos de todos los vehiculos, en caso de que el id provisto sea de un usuario que tiene el rol de people o admin de lo contrario el acceso será restringido</p>
+
+Si no mandamos ningún parametro por body obtendremostodo el catálogo como se muestra a continuación:
+
+![vehicles](https://github.com/CarlosG4rc/user_admin/assets/67180099/abce9228-d67b-49d6-b7f5-3f631da11f96)
+
+En caso de mandar un body debe ser en formato JSON.
+```
+{
+    "id":"af3910a6-429f-4c74-9ad5-dfe1c4aa04f2"
+}
+```
+
+![a_vehicle](https://github.com/CarlosG4rc/user_admin/assets/67180099/89a084b4-a663-4359-b023-cfce2435eb72)
 
