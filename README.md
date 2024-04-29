@@ -1,4 +1,4 @@
-<h1 align="center">Administrador de usaurios para API user_admin</h1>
+<h1 align="center">Administrador de usuarios para API user_admin</h1>
 
 API user_admin ayuda a gestionar usuarios (crear, actualizar, visualizar y eliminar), dentro de los parametros para creacion de usuarios se podrán asignar roles (admin, films, people, species, locations, vehicles)
 
