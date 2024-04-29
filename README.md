@@ -10,8 +10,8 @@
 <li align="left">Para poder utilizar esta API de manera local necesitas clonar este repositorio.</li>
 <li align="left">Abrir tu consola favorita y dirigirte a la carpeta del proyecto.</li>
 <li align="left">una vez dentro de la carpeta del repositorio debes ejecutar el comando:
- ``` 
+''' 
 npm install 
-```
+'''
 
 </li>
